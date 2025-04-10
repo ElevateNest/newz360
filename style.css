@@ -1,0 +1,147 @@
+/* ========== BASE STYLING ========== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefae0; /* Cream/beige background */
+  color: #1f2937;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* ========== HEADER ========== */
+.site-header {
+  background-color: #fefae0;
+  color: #064e3b;
+  padding: 2rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 4px solid #064e3b; /* Thicker dark green border */
+  border-radius: 16px;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #064e3b;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display', serif;
+  color: #3b3b3b;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.blog-post {
+  background: #ffffff;
+  border: 4px solid #064e3b; /* Thicker primary green border */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  font-weight: 500;
+}
+
+
+.blog-post:hover {
+  transform: translateY(-6px);
+}
+
+.blog-title {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #065f46;
+  font-weight: 700;
+}
+
+.blog-content p {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e2e8f0;
+  color: #1e293b;
+  font-size: 1rem;
+  font-weight: 600;
+  border-top: 1px solid #cbd5e1;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 600px) {
+  .brand {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .site-title {
+    font-size: 1.6rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .brand-text {
+    align-items: center;
+  }
+.news-summary {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.news-summary li {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #1e293b;
+}
+
+
+
+}
+
+
